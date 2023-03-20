@@ -1,3 +1,5 @@
-const seed = {};
+const seed = {
+	sortOrder: '',
+};
 
 export default seed;

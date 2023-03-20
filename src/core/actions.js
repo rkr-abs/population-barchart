@@ -1,9 +1,9 @@
 const setSortOrder = ({ data }) => ({
 	sortOrder: data,
 });
-const setCount = ({ data }) => ({
-	count: data,
+const setStateCount = ({ data }) => ({
+	stateCount: data,
 });
-const actions = { setSortOrder, setCount };
+const actions = { setSortOrder, setStateCount };
 
 export default actions;

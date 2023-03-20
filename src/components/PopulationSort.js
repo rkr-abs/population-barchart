@@ -6,8 +6,8 @@ const PopulationSort = (contest) => {
 	return <div>
 		<label>Sorting</label>
 		<select onClick={ ({ target: { value }}) => setSortOrder(value) }>
-			<option value="Descending">Descending</option>
 			<option value="Ascending">Ascending</option>
+			<option value="Descending">Descending</option>
 		</select></div>;
 };
 

@@ -1,5 +1,5 @@
 const seed = {
-	sortOrder: '',
+	sortOrder: 'Ascending',
 };
 
 export default seed;

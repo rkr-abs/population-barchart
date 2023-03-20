@@ -1,12 +1,13 @@
 import React from 'react';
+import BarChatManager from '../services/BarchartManager';
 import Segment from './Segment';
 
 const BarChart = (context) => {
-	const { config: { populations }} = context;
+	const sortedPopulations = BarChatManager.PopulationSort(context);
 
 	return (
 		<div className="container">
-			{(populations.map((population, key) =>
+			{(sortedPopulations.map((population, key) =>
 				<Segment
 					key={ key }
 					{ ...{ ...context, data: { population }} }

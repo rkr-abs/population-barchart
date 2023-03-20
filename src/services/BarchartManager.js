@@ -7,8 +7,14 @@ const sortOrders = {
 const PopulationSort = ({ config: { populations }, state: { sortOrder }}) =>
 	populations.sort((a, b) => sortOrders[sortOrder](a, b));
 
+const filteredPopulation = (context) => {
+	const { config: { populations }, state: { count }} = context;
+
+	return populations.filter((population, key) => count >= key + 1);
+};
 const BarChatManager = {
 	PopulationSort,
+	filteredPopulation,
 };
 
 export default BarChatManager;

@@ -5,6 +5,7 @@ const Input = (context) => {
 
 	return (
 		<input
+			className="inputBox"
 			type="number"
 			onChange={ ({ target: { value }}) => setCount(value) }
 		/>);

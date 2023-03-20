@@ -1,5 +1,7 @@
 import React from 'react';
 import BarChatManager from '../services/BarchartManager';
+import Input from './Input';
+import PopulationSort from './PopulationSort';
 import Segment from './Segment';
 
 const BarChart = (context) => {
@@ -8,6 +10,8 @@ const BarChart = (context) => {
 
 	return (
 		<div className="container">
+			<PopulationSort { ...context }/>
+			<Input { ...context }/>
 			{(filteredPopulations.map((population, key) =>
 				<Segment
 					key={ key }

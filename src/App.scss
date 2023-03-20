@@ -1,7 +1,16 @@
-.App {
-	text-align: center;
 
-	button {
-		font-weight: bold;
-	}
+.App {
+	background-color: black;
+	box-sizing: border-box;
+	height: 100vh;
+	width:100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.container {
+		background-color: antiquewhite;
+		width: 100vmin;
+		height: 100vmin;
+}
 }

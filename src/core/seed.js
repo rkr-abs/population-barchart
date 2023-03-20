@@ -1,6 +1,6 @@
 const seed = {
 	sortOrder: 'Ascending',
-	count: 3,
+	stateCount: 3,
 };
 
 export default seed;

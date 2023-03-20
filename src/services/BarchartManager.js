@@ -4,14 +4,15 @@ const sortOrders = {
 
 };
 
-const PopulationSort = ({ config: { populations }, state: { sortOrder }}) =>
+const PopulationSort = ({ data: { populations }, state: { sortOrder }}) =>
 	populations.sort((a, b) => sortOrders[sortOrder](a, b));
 
 const filteredPopulation = (context) => {
-	const { config: { populations }, state: { count }} = context;
+	const { config: { populations }, state: { stateCount }} = context;
 
-	return populations.filter((population, key) => count >= key + 1);
+	return populations.filter((population, key) => stateCount >= key + 1);
 };
+
 const BarChatManager = {
 	PopulationSort,
 	filteredPopulation,

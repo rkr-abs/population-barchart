@@ -1,12 +1,6 @@
 .App {
-	background-color: black;
-	box-sizing: border-box;
 	height: 100vh;
-	margin: 0;
 	width:100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	.container {
 		background-color: antiquewhite;
 		width: 100%;
@@ -19,11 +13,11 @@
 		}
 		.container-state{
 			border: 1px solid #000000;
-			background-color: blue;
+			background-color: rgb(195, 195, 213);
 			height: 20px;
+			display: flex;
 			.container-rural{
-			background-color: rgb(176, 183, 34);
-			height: 20px;
+				background-color: rgb(176, 183, 34);
 			}
 			.container-urban{
 				background-color: brown;

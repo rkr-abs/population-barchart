@@ -1,6 +1,6 @@
 const sortOrders = {
-	Ascending: ({ percentage: a }, { percentage: b }) => a - b,
-	Descending: ({ percentage: a }, { percentage: b }) => b - a,
+	Ascending: ({ statePercent: a }, { statePercent: b }) => a - b,
+	Descending: ({ statePercent: a }, { statePercent: b }) => b - a,
 
 };
 

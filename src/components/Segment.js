@@ -12,7 +12,7 @@ const Segment = (context) => {
 			<div
 				className="container-state"
 				style={ {
-					width: `${ population.percentage }%`,
+					width: `${ population.statePercent }%`,
 				} }
 			>
 				<div
